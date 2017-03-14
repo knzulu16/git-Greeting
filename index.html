@@ -2,22 +2,22 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="greet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
     <meta charset="utf-8">
-    <title></title>
-      
+    <title>Greeting Webpage</title>
+
   </head>
   <body>
       <div class="storage">
         <h1>Greeting</h1>
       <form id='myForm'>
         <div class='boxModel'>
-          Name:<input id='box' type="text"></input>
+          Name:<input id='box' type="text" value=''></input>
           <button id="myBtn"type='button'>greet me</button>
           <button id='reset' onclick="myReset()">Reset</button>
           <p id='para'></p>
           <p id='output'></p>
-      </div>
-
       <div id="myRadio">
         <td><input type="radio" name="Language" value="IsiXhosa">IsiXhosa</td>
         <td><input  type="radio" name="Language" value="English">English</td>
@@ -25,6 +25,7 @@
        </form>
       </div>
     </div>
+  </div>
 </body>
    <script type="text/javascript" src="greet.js"></script>
 
