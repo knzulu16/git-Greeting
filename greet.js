@@ -28,7 +28,11 @@ var Name = greet.value;
 
   if(language=='IsiXhosa'){
     // console.log(language);
+
+
   para.innerHTML='Molo ' + greet.value;
+
+
 }
 
 else if(language=='English'){
@@ -39,6 +43,8 @@ else if(language=='English'){
 else if(language=='Afrikaans'){
   para.innerHTML='Goeie dag ' + greet.value;
 }
+
+
 var greeting=document.getElementById('box').value='';
 //var count=0;
 var count=localStorage.getItem('on_click')
