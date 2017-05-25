@@ -1,11 +1,11 @@
-describe('createMsg()', function(){
+describe('inputName()', function(){
     it('should greet in IsiXhosa', function(){
-        assert.equal(createMsg('IsiXhosa'), name);
+        assert.equal(inputName('greetings'), 'Molweni,nzulu');
     });
     it('should greet in English', function(){
-        assert.equal(createMsg('English'),name);
+        assert.equal(inputName('greetings'),'Hello,nzulu');
     });
     it('should greet in Afrikaans', function(){
-        assert.equal(createMsg('Afrikaans'), name);
+        assert.equal(inputName('greetings'), 'Goeie dag,nzulu');
     });
   });
