@@ -1,22 +1,17 @@
-function inputName(name,language){
-  var greet='';
-  var greetings=greet.value;
-    if (language =='IsiXhosa'){
-     greetings='Molweni,'+name;
-    //  para.innerHTML = greetings;
-     return greetings
-    }
-    else if(language=='English'){
-      greetings='Hello,'+name;
-      // para.innerHTML=greetings;
-      return greetings;
+function inputName(name, language) {
 
-    }
-    else if(language=="Afrikaans"){
-      greetings='Goeie dag,'+name;
-      // para.innerHTML=greetings;
-      return greetings;
 
-    }
+  var greet = '';
 
+
+  if (language == 'IsiXhosa') {
+    return 'Molweni,' + name;
+
+  } else if (language == 'English') {
+    return 'Hello,' + name;
+
+  } else if (language == "Afrikaans") {
+    return 'Goeie dag,' + name;
+
+  }
 }

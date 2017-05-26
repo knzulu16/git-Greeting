@@ -1,11 +1,14 @@
-var greet = document.getElementById('box');
+
+
+
 var button = document.getElementById('myBtn');
-var para = document.getElementById("para");
 var myRadio = document.getElementById("myRadio");
 var output=document.getElementById("output");
 var count = 0;
 var namesGreeted = {};
 var greetingsCounter = 0;
+
+
 
 
 //var Isi=document.getElementById("Isi");
@@ -16,15 +19,22 @@ var language = "";
 myRadio.addEventListener('change', function(e) {
   language = e.target.value;
   //console.log(language);
-})
-button.addEventListener('click', function() {
-
-  var Name = greet.value;
-  if (namesGreeted[Name] === undefined) {}
-  inputName(Name,language,para);
-
-  counter(output);
 });
+
+button.addEventListener('click', function() {
+var greetElem=greet.value;
+var msg=greetElem.innerHTML= inputName();
+var lan=createMsg();
+document.getElementById('para').innerHTML=inputName(greetElem,lan);
+
+});
+
+//   var Name = greet.value;
+//   if (namesGreeted[Name] === undefined) {}
+//   inputName(Name,language,para);
+//
+//   counter(output);
+// });
   //
   //   greetingsCounter++;
   //   namesGreeted[Name] = 0;
