@@ -4,9 +4,8 @@
 var button = document.getElementById('myBtn');
 var myRadio = document.getElementById("myRadio");
 var output=document.getElementById("output");
-var count = 0;
-var namesGreeted = {};
-var greetingsCounter = 0;
+// var count = 0;
+// var greetingsCounter = 0;
 
 
 
@@ -26,6 +25,9 @@ var greetElem=greet.value;
 var msg=greetElem.innerHTML= inputName();
 var lan=createMsg();
 document.getElementById('para').innerHTML=inputName(greetElem,lan);
+
+counter();
+document.getElementById('output').innerHTML= count;
 
 });
 
