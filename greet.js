@@ -20,7 +20,7 @@ myRadio.addEventListener('change', function(e) {
   //console.log(language);
 });
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function(){
 var greetElem=greet.value;
 var msg=greetElem.innerHTML= inputName();
 var lan=createMsg();
@@ -70,10 +70,9 @@ document.getElementById('output').innerHTML= count;
 //   }
 // });
 
-function myReset(){
-  localStorage.removeItem('on_click');
-  document.getElementById('output').innerHTML = count;
-}
+// function myReset(){
+//   localStorage.removeItem('on_click');
+// }
 
 
 

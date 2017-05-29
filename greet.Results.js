@@ -1,11 +1,14 @@
 var para = document.getElementById("para");
 var greet = document.getElementById('box');
 var output = document.querySelector('#output');
+var reset =document.getElementById('reset');
+
+document.getElementById('output').innerHTML = count;
 
 
 
 
-function createMsg() {
+function createMsg(){
   if (document.getElementById('IsiXhosa').checked === true) {
     return 'IsiXhosa'
   }
