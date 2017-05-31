@@ -2,10 +2,14 @@ var para = document.getElementById("para");
 var greet = document.getElementById('box');
 var output = document.querySelector('#output');
 var reset =document.getElementById('reset');
-
 document.getElementById('output').innerHTML = count;
 
 
+
+function Reset(){
+localStorage.setItem('on_click', count);
+document.getElementById("output").innerHTML = count;
+  }
 
 
 function createMsg(){

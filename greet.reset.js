@@ -1,6 +1,6 @@
-function myReset(){
-    reset(count);
-    counter=0;
-  }
-  return counter;
+function myReset(counting){
+
+    counting= 0;
+
+  return counting;
 }
