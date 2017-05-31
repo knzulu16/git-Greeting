@@ -15,13 +15,15 @@ var greetElem=greet.value;
 var msg=greetElem.innerHTML= inputName();
 var lan=createMsg();
 document.getElementById('para').innerHTML=inputName(greetElem,lan);
+
 counter();
 myReset();
 Reset();
 document.getElementById('output').innerHTML= count;
 clearBox();
 document.getElementById('box').innerHTML=clear(clearText);
-
+storeCounter();
+document.getElementById('output').innerHTML;
 
 
 
