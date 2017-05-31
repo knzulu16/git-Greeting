@@ -11,7 +11,10 @@ localStorage.setItem('on_click', count);
 document.getElementById("output").innerHTML = count;
   }
 
+function clearBox(){
+document.getElementById('box').value='';
 
+}
 function createMsg(){
   if (document.getElementById('IsiXhosa').checked === true) {
     return 'IsiXhosa'
