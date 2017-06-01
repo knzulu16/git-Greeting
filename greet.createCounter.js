@@ -1,11 +1,11 @@
 var count = 0;
-var greet='';
-var namesGreeted={};
+var greet = '';
+var namesGreeted = {};
 
 
-function counter(){
+function counter() {
   var Name = greet.value;
-    if (namesGreeted[Name] === undefined){
+  if (namesGreeted[Name] === undefined) {
     namesGreeted[Name] = 0;
     count++;
   }

@@ -1,6 +1,6 @@
-function clear(text){
-  if(text=='nzulu'){
-    text="";
+function clear(text) {
+  if (text == 'nzulu') {
+    text = "";
   }
   return text;
 }
