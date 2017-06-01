@@ -9,21 +9,32 @@ myRadio.addEventListener('change', function(e) {
 
 });
 
-button.addEventListener('click', function() {
+
+function displayCounter(counting){
+  output.innerHTML=counting;
+}
+
+function displayMsg(message){
+  para.innerHTML=message;
+}
+button.addEventListener('click', function(){
   var greetElem = greet.value;
-  var msg = greetElem.innerHTML = inputName();
+
   var lan = createMsg();
-  document.getElementById('para').innerHTML = inputName(greetElem, lan);
+  var message = inputName(greetElem, lan);
 
-  counter();
-  myReset();
-  Reset();
-  document.getElementById('output').innerHTML = count;
+displayMsg(message);
+
+  displayCounter(counter(greetElem));
   clearBox();
-  document.getElementById('box').innerHTML = clear(clearText);
-  storeCounter();
-  document.getElementById('output').innerHTML;
 
-
+  // document.getElementById('box').innerHTML = clear();
 
 });
+
+document.getElementById('reset').addEventListener('click',function(){
+  var newCounter=myReset();
+  displayCounter=newCounter;
+  displayMsg("");
+});
+displayCounter(setCounter());

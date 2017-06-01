@@ -1,15 +1,15 @@
-var para = document.getElementById("para");
+// var para = document.getElementById("para");
 var greet = document.getElementById('box');
 var output = document.querySelector('#output');
 var reset = document.getElementById('reset');
+
+
+//localStorage.setItem('on_click', count);
+// output.innerHTML = count;
+
 document.getElementById('output').innerHTML = count;
-
-
-
-function Reset() {
-  localStorage.setItem('on_click', count);
-  document.getElementById("output").innerHTML = count;
-}
+// function Reset(){
+// }
 
 function clearBox() {
   document.getElementById('box').value = '';
