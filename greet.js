@@ -20,15 +20,15 @@ function displayMsg(message){
 button.addEventListener('click', function(){
   var greetElem = greet.value;
 
-  var lan = createMsg();
-  var message = inputName(greetElem, lan);
+  var lan = returnLang();
+  var message = GenerateMsg(greetElem, lan);
 
 displayMsg(message);
 
   displayCounter(counter(greetElem));
   clearBox();
 
-  // document.getElementById('box').innerHTML = clear();
+
 
 });
 

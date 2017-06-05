@@ -1,9 +1,4 @@
-function inputName(name, language) {
-
-
-  var greet = '';
-
-
+function GenerateMsg(name, language) {
   if (language == 'IsiXhosa') {
     return 'Molweni,' + name;
 
