@@ -21,7 +21,7 @@ button.addEventListener('click', function(){
   var greetElem = greet.value;
 
   var lan = returnLang();
-  var message = GenerateMsg(greetElem, lan);
+  var message = generateMsg(greetElem, lan);
 
 displayMsg(message);
 
